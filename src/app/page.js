@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div>
       <AppNavbar/>
-      <Button>Button</Button>
+      <Button>Buttofn</Button>
     </div>
   );
 }
