@@ -1,4 +1,7 @@
+import { DecodeHtmlEntities } from "@/lib/func";
 import { PlayIcon } from "lucide-react";
+
+
 
 export default async function SongList() {
   let songs = await fetch(
@@ -31,7 +34,7 @@ export const SongCard = ({ song }) => {
           alt={song.name}
         />
         <div className="ml-4 block mt-1">
-          <h2 className="">{song.name}</h2>
+          <h2 className="">{<DecodeHtmlEntities>{song.name}</DecodeHtmlEntities>}</h2>
           {/* <p className="">{song.album.name}</p> */}
           <p className=" text-xs">
             
